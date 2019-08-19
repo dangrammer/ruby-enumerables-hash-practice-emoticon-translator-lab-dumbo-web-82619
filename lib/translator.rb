@@ -19,8 +19,8 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, emoticon)
-  load_library(file)
-  if get_emoticon.keys == emoticon
+  emoticon_hash = load_library(file)
+  if emotican_hash.keys == emoticon
     return 
   
 end
