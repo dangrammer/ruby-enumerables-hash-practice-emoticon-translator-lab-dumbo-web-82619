@@ -25,8 +25,6 @@ def get_japanese_emoticon(file, emoticon)
     inner_hash.each do |key, value|
       if key == emoticon 
         return value
-      else
-        return "Sorry, that emoticon was not found"
       end
     end
 end
