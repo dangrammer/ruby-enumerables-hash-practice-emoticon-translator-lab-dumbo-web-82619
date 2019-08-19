@@ -20,7 +20,8 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   emoticon_hash = load_library(file)
-  if emotican_hash.keys == emoticon
+  if emotican_hash.select do |emo|
+    emo == 
     return 
   
 end
