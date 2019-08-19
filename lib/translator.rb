@@ -7,16 +7,15 @@ def load_library(file)
   
   data.map do |key, value|
     get_meaning[value[1]] = key
-    get_meaning
   end
   
   data.map do |key, value|
     get_emo[value[0]] = value[1]
-    get_emo
   end
     
   return {:get_meaning => get_meaning.to_h, :get_emoticon => get_emo.to_h}
 end
+
 
 def get_japanese_emoticon(file, emoticon)
   emoticon_hash = load_library(file)
@@ -33,6 +32,7 @@ def get_japanese_emoticon(file, emoticon)
   end
 end
 
+
 def get_english_meaning(file, emoticon)
   emoticon_hash = load_library(file)
   inner_hash = emoticon_hash.values[0]
@@ -46,7 +46,6 @@ def get_english_meaning(file, emoticon)
   else
     return "Sorry, that emoticon was not found"
   end
-  
 end
 
 
