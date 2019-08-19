@@ -20,9 +20,9 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   emoticon_hash = load_library(file)
-  i = 0
-  if emotican_hash.keys[i] == emoticon
-    return emoticon_hash.values[i]
+  
+  if emotican_hash.keys[0] == emoticon
+    return emoticon_hash.values[0]
   elsif
     return "Sorry, that emoticon was not found"
   end
