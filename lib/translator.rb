@@ -20,10 +20,7 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   emoticon_hash = load_library(file)
-  
-  if emotican_hash.keys[0] == emoticon
-    return emoticon_hash.values[0]
-  end
+
 end
 
 def get_english_meaning
